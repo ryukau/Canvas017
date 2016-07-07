@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset=utf-8>
+    <title>Canvas017 Look and Say Cellular Automaton</title>
+    <style type="text/css">
+        body {
+            margin: 0;
+        }
+
+        canvas {
+            /* image-rendering: pixelated; */
+            border-style: solid;
+            border-width: 0.2px;
+            border-color: #000000;
+        }
+    </style>
+</head>
+
+<body>
+    <script src="canvas.js"></script>
+    <script src="fibonacci_ca.js"></script>
+
+    <p>
+        Max State <input id="numberMaxState" type="number" value=10 min=1 max=256 step=1 oninput="onInputNumberMaxState(this.value)">
+        / <input id="buttonReset" type="button" value="Reset" onclick="onClickButtonReset()">
+        / <input id="buttonRandom" type="button" value="Random" onclick="onClickButtonRandom()">
+    </p>
+</body>
+
+</html>
